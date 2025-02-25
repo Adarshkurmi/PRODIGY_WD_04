@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edege">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adarsh Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1cc6f47298.js"crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                <h1>Portfo<span>lio</span></h1>
+
+            </div>
+                
+                <!-- <img src="" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Developer</p>
+                <h1>Hi, I'm <span>Adarsh Kurmi</span><br>  a Web-Developer & Backend-Developer</h1>
+            </div>
+        </div>
+    </div>
+    <!-------about--------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            <img src="sonu.jpg" ></div>
+            <div class="about-col-2">
+                <h1 class="sub-tittles">About Me</h1>
+                <p> 3 months of self working experience in Node development involving creation of API.
+
+                    Working knowledge on JavaScript based technologies and frameworks like Node.js, 
+                      Express.js, Sequelize and many more.
+
+                    working knowledge of project and code management tools like GitHub.</p>
+
+
+                    <div class="tab-tittles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming languages</span><br> JavaScript,HTML5basic,CSS 3 BASIC</li>
+                                <li><span>Database</span><br>MySQL</li>
+                                <li><span>Framework & Libraries</span><br>Express,Sequelize,Joi,Bcrypt,Jsonwebtoken,Nodemailer,Otp-Generator,Cors,Mysql2</li>
+                                <li><span>Technologies</span><br>Node.js,Npm</li>
+                                <li><span>Applicatin/Tools</span><br>VSCODE,POSTMAN,GitHub,XAMPP SERVER</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents active-tab" id="education">
+                            <ul>
+                                <li><span>2021-2023</span><br>Bsc-It from Guru Nanak College </li>
+                                <li><span>2024</span><br>Node Api form Scale-it Institute</li>
+                                <li><span>2025-2026</span>Msc-It from kirti College</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!------------services------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-tittle">My Study</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+
+                    <h2>Web Development</h2>
+                    <p>Study about creating a web page </p>
+                    <a target="_blank" href="https://www.w3schools.com/whatis/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Backend-developer</h2>
+                    <p>Study about Backend </p>
+                    <a target="_blank" href="https://www.w3schools.com/nodejs/">Learn more</a>
+                </div>
+                <div>
+                <i class="fas fa-crop-alt"></i>
+                    <h2>Frontend-developer</h2>
+                    <p>Study about Frontend </p>
+                    <a target="_blank" href="https://www.w3schools.com/whatis/whatis_frontenddev.asp">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+            <!-- <a href="#" class="btn">See more</a> -->
+        </div>
+    </div>
+
+<!----contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-tittle">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>adarskurmi@gamil.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>123344</p>
+                <div class="social-icons">
+                    <a target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                    <a target="_blank" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/adarsh-kurmi-62780828b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                    <a target="_blank" href="https://github.com/Adarshkurmi"><i class="fa-brands fa-github"></i></a>
+                </div>
+ <!--Link your resume in herf-->
+                <a target="_blank" href=""Download class="btn btn2">Download CV</a>
+            </div>
+<!-----form ------->
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"rows="6" placeholder="Your Message" ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>  
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Adarsh. made by <i class="fas fa-heart"></i> Me </p>
+    </div>
+</div>
+
+<script>
+
+        var tablinks = document.getElementsByClassName('tab-links')
+        var tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+
+        var sidemenus = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenus.style.right = "0";
+
+        }
+        function closemenu(){
+            sidemenus.style.right = "-200px";
+            
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxoMSs5KbstxW78VPMHFORk6QicJSKSH20JW8vy2jjQiB9YoJLVMwLppzTXU-QIa8Lz/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML =""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      
+</body>
+</html>
